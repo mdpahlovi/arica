@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Navbar from "@/components/Layouts/Navbar";
+import Footer from "@/components/Layouts/Footer";
 
 export default function Main({ children }) {
     return (
@@ -9,9 +11,9 @@ export default function Main({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <nav>Navbar</nav>
+            <Navbar />
             {children}
-            <footer>Footer</footer>
+            <Footer />
         </>
     );
 }
