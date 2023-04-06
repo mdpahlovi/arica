@@ -11,9 +11,9 @@ const contact_data = [
 
 const Contact = () => {
     return (
-        <section className="container py-16 space-y-6">
-            <h1 className="text-center">Contact Us</h1>
-            <p className="max-w-xl mx-auto text-center max-h-[72px] overflow-hidden">
+        <section className="container py-16">
+            <h2 className="text-center">Contact Us</h2>
+            <p className="max-w-xl mx-auto text-center max-h-[72px] overflow-hidden mt-2.5 mb-4">
                 We use an agile approach to test assumptions and connect with the needs of your audience early and often.
             </p>
             <div className="space-y-10">

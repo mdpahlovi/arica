@@ -12,7 +12,13 @@
         --edge: 212 216 217;
     }
     h1 {
-        @apply text-4xl font-extrabold md:text-5xl;
+        @apply text-[40px] leading-10 font-extrabold md:text-5xl;
+    }
+    h2 {
+        @apply text-4xl font-bold;
+    }
+    h5 {
+        @apply text-lg font-semibold;
     }
     input,
     textarea {
@@ -31,5 +37,8 @@
     }
     .social-icon {
         @apply w-10 h-10 border rounded-full flex items-center justify-center;
+    }
+    .card {
+        @apply bg-background border rounded-lg shadow-lg;
     }
 }
