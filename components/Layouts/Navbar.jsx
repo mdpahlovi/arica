@@ -34,6 +34,9 @@ export default function Navbar() {
                         {navigation.map((item, idx) => (
                             <NavLink key={idx} item={item} />
                         ))}
+                        <Link href="/book" className="button primary">
+                            Book Now
+                        </Link>
                     </ul>
                 </div>
             </div>

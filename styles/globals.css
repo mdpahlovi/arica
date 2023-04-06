@@ -14,6 +14,10 @@
     h1 {
         @apply text-4xl font-extrabold md:text-5xl;
     }
+    input,
+    textarea {
+        @apply px-5 py-2.5 border focus:border-black rounded-lg focus:outline-none;
+    }
 }
 @layer components {
     .container {
