@@ -6,10 +6,10 @@ export default function TeamCard({ member }) {
     const { name, title, mail, facebook, linkedin, avatar } = member;
 
     return (
-        <div class="group relative space-y-4 text-center">
-            <div class="relative z-10 mt-6 mx-auto h-52 w-52 rotate-45 overflow-hidden rounded-[4rem] -mb-[7.5rem]">
+        <div className="group relative space-y-4 text-center">
+            <div className="relative z-10 mt-6 mx-auto h-52 w-52 rotate-45 overflow-hidden rounded-[4rem] -mb-[7.5rem]">
                 <Image
-                    class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-150"
+                    className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-150"
                     src={avatar}
                     alt="woman"
                     width={100}
@@ -19,11 +19,11 @@ export default function TeamCard({ member }) {
             <div className="absolute w-full bottom-16">
                 <h5 className="text-center">{name}</h5>
             </div>
-            <div class="pt-32 pb-6 card transition duration-300 scale-y-0 group-hover:scale-y-100 origin-top">
+            <div className="pt-32 pb-6 card transition duration-300 scale-y-0 group-hover:scale-y-100 origin-top">
                 <h5>{name}</h5>
                 <div className="text-gray-500">
                     <p>{title}</p>
-                    <div class="mt-4 flex justify-center space-x-4">
+                    <div className="mt-4 flex justify-center space-x-4">
                         <a href={mail}>
                             <SiMaildotru size={20} />
                         </a>

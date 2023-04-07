@@ -1,4 +1,6 @@
+import Header from "@/components/Common/Header";
 import ContactCard from "@/components/Contact/ContactCard";
+import Link from "next/link";
 import { BsHeadset, BsBugFill } from "react-icons/bs";
 import { FaCommentsDollar, FaNewspaper } from "react-icons/fa";
 
@@ -11,12 +13,11 @@ const contact_data = [
 
 const Contact = () => {
     return (
-        <section className="container py-16">
-            <h2 className="text-center">Contact Us</h2>
-            <p className="max-w-xl mx-auto text-center max-h-[72px] overflow-hidden mt-2.5 mb-4">
-                We use an agile approach to test assumptions and connect with the needs of your audience early and often.
-            </p>
-            <div className="space-y-10">
+        <>
+            <Header title="Contact Us">
+                <Link href="/contact">Contact</Link>
+            </Header>
+            <section className="container py-16 space-y-10">
                 <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
                     {contact_data.map((contact, idx) => (
                         <ContactCard key={idx} contact={contact} />
@@ -44,8 +45,8 @@ const Contact = () => {
                         className="w-full h-full rounded-lg min-h-[22rem]"
                     />
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 
