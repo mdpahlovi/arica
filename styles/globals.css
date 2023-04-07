@@ -21,7 +21,8 @@
         @apply text-lg font-semibold;
     }
     input,
-    textarea {
+    textarea,
+    select {
         @apply px-5 py-2.5 border focus:border-black rounded-lg focus:outline-none;
     }
 }
