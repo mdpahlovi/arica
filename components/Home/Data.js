@@ -123,4 +123,22 @@ export const testimonials = [
         title: "Product designer",
         quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.",
     },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/15.jpg",
+        name: "MD Pahlovi",
+        title: "Founder of meta",
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae.",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/45.jpg",
+        name: "Jabil Hazan",
+        title: "Software engineer",
+        quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/85.jpg",
+        name: "Jason Roy",
+        title: "Product designer",
+        quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.",
+    },
 ];

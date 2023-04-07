@@ -1,7 +1,29 @@
 import ReviewCard from "./ReviewCard";
 import { testimonials } from "../Data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function Review() {
+    // Slider Options
+    const params = {
+        spaceBetween: 24,
+        slidesPerView: 1,
+        style: { "--swiper-navigation-size": "20px", "--swiper-navigation-color": "#000", "--swiper-navigation-sides-offset": "24px" },
+        navigation: true,
+        modules: [Autoplay, Navigation],
+        autoplay: true,
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    };
+
     return (
         <section className="container py-16">
             <div className="max-w-xl text-center mx-auto space-y-2.5 -mt-2">
@@ -11,11 +33,13 @@ export default function Review() {
                     euismod volutpat arcu volutpat et.
                 </p>
             </div>
-            <div className="mt-8 grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Swiper {...params} className="mt-8">
                 {testimonials.map((testimonial, idx) => (
-                    <ReviewCard key={idx} testimonial={testimonial} />
+                    <SwiperSlide key={idx}>
+                        <ReviewCard testimonial={testimonial} />
+                    </SwiperSlide>
                 ))}
-            </div>
+            </Swiper>
         </section>
     );
 }

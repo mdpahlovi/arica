@@ -42,3 +42,16 @@
         @apply bg-background border rounded-lg shadow-lg;
     }
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    background-color: rgb(255, 255, 255);
+    padding: 8px 13px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.swiper-button-disabled {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
