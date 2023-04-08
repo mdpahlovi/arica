@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import SecHeader from "@/components/Common/SecHeader";
 
 export default function Review() {
     // Slider Options
@@ -26,14 +27,8 @@ export default function Review() {
 
     return (
         <section className="container py-16">
-            <div className="max-w-xl text-center mx-auto space-y-2.5 -mt-2">
-                <h2>Hear from our customers</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem,
-                    euismod volutpat arcu volutpat et.
-                </p>
-            </div>
-            <Swiper {...params} className="mt-8">
+            <SecHeader title="Our Testimonials">Hear from our customers</SecHeader>
+            <Swiper {...params}>
                 {testimonials.map((testimonial, idx) => (
                     <SwiperSlide key={idx}>
                         <ReviewCard testimonial={testimonial} />

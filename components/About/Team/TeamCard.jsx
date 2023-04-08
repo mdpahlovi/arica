@@ -7,7 +7,7 @@ export default function TeamCard({ member }) {
 
     return (
         <div className="group relative space-y-4 text-center">
-            <div className="relative z-10 mt-6 mx-auto h-52 w-52 rotate-45 overflow-hidden rounded-[4rem] -mb-[7.5rem]">
+            <div className="relative z-10 mt-5 mx-auto h-52 w-52 rotate-45 overflow-hidden rounded-[4rem] -mb-[7.5rem]">
                 <Image
                     className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-150"
                     src={avatar}

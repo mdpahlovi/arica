@@ -1,17 +1,12 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import SecHeader from "../Common/SecHeader";
 
 export default function CLient() {
     return (
         <div className="py-16 bg-accent text-white">
-            <div className="max-w-xl text-center mx-auto space-y-2.5 -mt-2">
-                <h2>Who&apos;s using Arica?</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nibh nisl, vel egestas magna rhoncus at. Nunc elementum efficitur
-                    tortor in laoreet.
-                </p>
-            </div>
-            <Marquee className="mt-8" gradient={false}>
+            <SecHeader title="Our Clients">Who&apos;s using Arica?</SecHeader>
+            <Marquee gradient={false}>
                 {[...Array(11)].map((a, idx) => (
                     <Image key={idx} src={`/client/image (${idx}).png`} alt="" width={200} height={94} />
                 ))}

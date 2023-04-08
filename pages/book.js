@@ -33,6 +33,7 @@ export default function book() {
                         <input type="date" name="start" placeholder="Starting Date" />
                         <input type="date" name="end" placeholder="Ending Date" />
                     </div>
+                    <textarea name="message" rows={4} placeholder="Details About"></textarea>
                     <button type="submit" className="button primary justify-center">
                         Submit Now
                     </button>
