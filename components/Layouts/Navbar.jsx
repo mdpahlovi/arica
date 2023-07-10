@@ -1,18 +1,12 @@
-import { useState } from "react";
-import NavLink from "./NavLink";
 import Link from "next/link";
 import Image from "next/image";
+import NavLink from "./NavLink";
+import { useState } from "react";
+import { navigation } from "@/data/data";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-
-    const navigation = [
-        { title: "Home", path: "/" },
-        { title: "About Us", path: "/about" },
-        { title: "Products", path: "/products" },
-        { title: "Contact Us", path: "/contact" },
-    ];
 
     return (
         <nav className="py-4 border-b">

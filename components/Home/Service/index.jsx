@@ -1,5 +1,5 @@
 import SecHeader from "@/components/Common/SecHeader";
-import { services } from "../Data";
+import { services } from "@/data/data";
 
 export default function Service() {
     return (

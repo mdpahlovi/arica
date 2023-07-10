@@ -1,5 +1,71 @@
 import { FaDigitalOcean } from "react-icons/fa";
 
+export const stats = [
+    {
+        data: "300+",
+        title: "Customers",
+    },
+    {
+        data: "20K+",
+        title: "Products",
+    },
+    {
+        data: "30M+",
+        title: "Total Revenue",
+    },
+];
+
+export const team = [
+    {
+        avatar: "https://randomuser.me/api/portraits/men/7.jpg",
+        name: "Martiana dialan",
+        title: "Product Designer",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+        name: "Micheal colorand",
+        title: "Software Engineer",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/9.jpg",
+        name: "Brown Luis",
+        title: "Full Stack Engineer",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/11.jpg",
+        name: "Lysa sandiago",
+        title: "Head of Designer",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+        name: "Daniel martin",
+        title: "Product Designer",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/men/14.jpg",
+        name: "Vicky tanson",
+        title: "Product Manager",
+        linkedin: "/",
+        mail: "/",
+        facebook: "/",
+    },
+];
+
 export const services = [
     {
         icons: <FaDigitalOcean size={48} />,
@@ -27,7 +93,8 @@ export const services = [
             </svg>
         ),
         title: "Seo And Website Management",
-        descriptions: "our experienced seo experts will check your website’s health and device tailor made strategies to improve its overall performance.",
+        descriptions:
+            "our experienced seo experts will check your website’s health and device tailor made strategies to improve its overall performance.",
     },
     {
         icons: (
@@ -141,4 +208,77 @@ export const testimonials = [
         title: "Product designer",
         quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.",
     },
+];
+
+export const footer_nabs = [
+    {
+        label: "Company",
+        items: [
+            {
+                href: "/",
+                name: "Partners",
+            },
+            {
+                href: "/",
+                name: "Blog",
+            },
+            {
+                href: "/",
+                name: "Team",
+            },
+            {
+                href: "/",
+                name: "Careers",
+            },
+        ],
+    },
+    {
+        label: "Resources",
+        items: [
+            {
+                href: "/",
+                name: "contact",
+            },
+            {
+                href: "/",
+                name: "Support",
+            },
+            {
+                href: "/",
+                name: "Docs",
+            },
+            {
+                href: "/",
+                name: "Pricing",
+            },
+        ],
+    },
+    {
+        label: "About",
+        items: [
+            {
+                href: "/",
+                name: "Terms",
+            },
+            {
+                href: "/",
+                name: "License",
+            },
+            {
+                href: "/",
+                name: "Privacy",
+            },
+            {
+                href: "/",
+                name: "About US",
+            },
+        ],
+    },
+];
+
+export const navigation = [
+    { title: "Home", path: "/" },
+    { title: "About Us", path: "/about" },
+    { title: "Products", path: "/products" },
+    { title: "Contact Us", path: "/contact" },
 ];

@@ -1,10 +1,10 @@
-import About from "@/components/About/About";
-import Team from "@/components/About/Team/Team";
+import AboutUs from "@/components/About";
+import Team from "@/components/About/Team";
 
-export default function AboutUs() {
+export default function About() {
     return (
         <>
-            <About />
+            <AboutUs />
             <Team />
         </>
     );

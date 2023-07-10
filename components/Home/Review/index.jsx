@@ -1,10 +1,8 @@
 import ReviewCard from "./ReviewCard";
-import { testimonials } from "../Data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
 import SecHeader from "@/components/Common/SecHeader";
+import { testimonials } from "@/data/data";
 
 export default function Review() {
     // Slider Options

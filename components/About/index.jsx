@@ -1,5 +1,5 @@
+import { stats } from "@/data/data";
 import Image from "next/image";
-import { stats } from "./Data";
 
 export default function About() {
     return (
@@ -11,10 +11,11 @@ export default function About() {
                 <div className="space-y-2.5 -mt-2">
                     <h2>For One-Stop Solution Since 2008</h2>
                     <p>
-                        Arica is a full-service digital marketing company that focuses on driving results via effective and measurable solutions. We partner
-                        with our clients to develop their marketing plans, and set up winning strategies to generate and convert leads. From designing,
-                        developing and optimizing websites to increasing sales through tactical digital marketing activities, we work with our clients to raise
-                        their brand awareness, generate more sales opportunities and maximize their marketing budget ROI.
+                        Arica is a full-service digital marketing company that focuses on driving results via effective and measurable
+                        solutions. We partner with our clients to develop their marketing plans, and set up winning strategies to generate
+                        and convert leads. From designing, developing and optimizing websites to increasing sales through tactical digital
+                        marketing activities, we work with our clients to raise their brand awareness, generate more sales opportunities and
+                        maximize their marketing budget ROI.
                     </p>
                 </div>
                 <div className="card divide-y grid sm:grid-cols-3 sm:divide-x sm:divide-y-0">

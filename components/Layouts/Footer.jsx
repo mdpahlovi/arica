@@ -1,74 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { footer_nabs } from "@/data/data";
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
-    const footer_nabs = [
-        {
-            label: "Company",
-            items: [
-                {
-                    href: "/",
-                    name: "Partners",
-                },
-                {
-                    href: "/",
-                    name: "Blog",
-                },
-                {
-                    href: "/",
-                    name: "Team",
-                },
-                {
-                    href: "/",
-                    name: "Careers",
-                },
-            ],
-        },
-        {
-            label: "Resources",
-            items: [
-                {
-                    href: "/",
-                    name: "contact",
-                },
-                {
-                    href: "/",
-                    name: "Support",
-                },
-                {
-                    href: "/",
-                    name: "Docs",
-                },
-                {
-                    href: "/",
-                    name: "Pricing",
-                },
-            ],
-        },
-        {
-            label: "About",
-            items: [
-                {
-                    href: "/",
-                    name: "Terms",
-                },
-                {
-                    href: "/",
-                    name: "License",
-                },
-                {
-                    href: "/",
-                    name: "Privacy",
-                },
-                {
-                    href: "/",
-                    name: "About US",
-                },
-            ],
-        },
-    ];
-
     return (
         <footer className="border-t">
             <div className="container pt-12 gap-6 justify-between md:flex space-y-6 md:space-y-0">
@@ -77,7 +12,9 @@ export default function Footer() {
                         <Link href="/">
                             <Image src="/logo.png" width={120} height={50} alt="Logo" />
                         </Link>
-                        <p className="leading-relaxed mt-2">Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+                        <p className="leading-relaxed mt-2">
+                            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+                        </p>
                     </div>
                 </div>
                 <div className="flex-1 flex flex-col xs:flex-row xs:justify-between gap-6">

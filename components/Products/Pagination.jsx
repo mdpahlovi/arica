@@ -1,4 +1,4 @@
-const Pagination = ({ length, page, setPage }) => {
+export default function Pagination({ length, page, setPage }) {
     const total_pages = Math.ceil(parseInt(length) / 6);
 
     return (
@@ -31,6 +31,4 @@ const Pagination = ({ length, page, setPage }) => {
             </button>
         </div>
     );
-};
-
-export default Pagination;
+}

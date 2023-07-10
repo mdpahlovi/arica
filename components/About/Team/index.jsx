@@ -1,6 +1,7 @@
 import SecHeader from "@/components/Common/SecHeader";
-import { team } from "../Data";
+
 import TeamCard from "./TeamCard";
+import { team } from "@/data/data";
 
 export default function Team() {
     return (
