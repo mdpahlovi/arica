@@ -1,12 +1,16 @@
 {
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": false
+    },
     "files.exclude": {
-        "node_modules": true,
         ".next": true,
+        "node_modules": true,
         ".eslintrc.json": true,
         ".gitignore": true,
         "jsconfig.json": true,
         "postcss.config.js": true,
         "README.md": true,
-        "package-lock.json": true
+        "yarn.lock": true
     }
 }

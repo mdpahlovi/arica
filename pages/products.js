@@ -5,6 +5,8 @@ import { PhotoProvider } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { classNames } from "@/utilities/classNames";
 import ProductCard from "@/components/Products/ProductCard";
+import Pagination from "@/components/Products/Pagination";
+import { useState } from "react";
 
 const categories = [
     {
@@ -26,6 +28,8 @@ const categories = [
 ];
 
 export default function Example() {
+    const [page, setPage] = useState(0);
+
     return (
         <>
             <Header title="Our Recent Works">
@@ -52,12 +56,15 @@ export default function Example() {
                     </Tab.List>
                     <Tab.Panels className="mt-8">
                         {categories.map(({ data }, idx) => (
-                            <Tab.Panel key={idx} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <Tab.Panel key={idx}>
                                 <PhotoProvider>
-                                    {data.map((item, idx) => (
-                                        <ProductCard key={idx} item={item} />
-                                    ))}
+                                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                        {data.slice(6 * page, 6 * (page + 1)).map((item, idx) => (
+                                            <ProductCard key={idx} item={item} />
+                                        ))}
+                                    </div>
                                 </PhotoProvider>
+                                <Pagination length={data.length} page={page} setPage={setPage} />
                             </Tab.Panel>
                         ))}
                     </Tab.Panels>
